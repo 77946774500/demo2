@@ -6,9 +6,7 @@ import com.fh.model.Game;
 import com.fh.model.GameParam;
 import com.fh.service.GameService;
 import io.swagger.annotations.Api;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -23,9 +21,13 @@ import javax.servlet.http.HttpServletRequest;
 @Api(tags = "用户管理相关接口")
 public class GameController {
 
+    public static void main(String[] args) {
+        System.out.println("1111111111");
+    }
+
+
     @Resource
     private GameService gameService;
-
 
 
 
